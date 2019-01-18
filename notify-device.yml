@@ -1,0 +1,9 @@
+functions:
+  notify-device:
+    lang: node
+    handler: ./notify-device
+    image: notify-device:latest
+    secrets:
+      - pushover-token
+      - pushover-user
+      - pushover-fn-password
